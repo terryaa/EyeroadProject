@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+        android:id="@+id/meeting_name_text"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:text="제 목 :"
+        android:layout_width="50dp" />
+        <TextView
+            android:id="@+id/memoInfoName"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:shadowColor="#FF464646"
+            android:textSize="23dp"
+            android:layout_weight="0.57" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/memo_data_text"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:text="날 짜 :"
+            android:layout_width="50dp" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="23dp"
+            android:layout_gravity="right"
+            android:id="@+id/memoInfoDate"
+            android:layout_weight="0.42" />
+        <ImageView
+            android:id="@+id/memoInfoIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/bar"
+        android:id="@+id/imageView"
+        android:layout_below="@id/title"
+        android:layout_height="23dp" />
+
+    <TextView
+        android:id="@+id/memoInfoContent"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_weight="0.96"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/memoInfoImage"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <Button
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_gravity="right"
+        android:id="@+id/memoInfoDelete"
+        android:background="@drawable/delete"
+        />
+
+</LinearLayout>

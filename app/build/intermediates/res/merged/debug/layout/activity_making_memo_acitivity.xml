@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:hint="메모 제목"
+            android:ems="20"
+            android:id="@+id/title"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/icon1"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_action_name"
+            android:layout_width="50dp"
+            />
+        <ImageButton
+            android:id="@+id/icon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic2_action_name"
+         />
+        <ImageButton
+            android:id="@+id/icon3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic3_action_name"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_right"
+            android:id="@+id/selected_icon" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/selected_icon_img"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/bar"
+        android:id="@+id/imageView"
+        android:layout_weight="1"
+        android:layout_below="@id/title"
+        android:layout_height="25dp" />
+
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="170dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="12"
+            android:background="@android:color/transparent"
+            android:id="@+id/body"
+            android:singleLine="false"
+            android:scrollbars="vertical"
+            android:hint="어떤 메모를 입력하실껀가요?" />
+    </ScrollView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <ImageView
+            app:srcCompat="@drawable/border"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageresult"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.17"
+        android:weightSum="1">
+
+        <Button
+            android:text="사진올리기"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/button_enroll"
+            android:layout_alignStart="@+id/button_enroll"
+            android:background="#00ff0000"
+            android:id="@+id/imageupload"
+            android:layout_gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/public_or_private"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:clickable="true"
+            android:layout_gravity="left"
+            android:text="공개 여부"
+            android:layout_weight="0.96" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/save"
+            android:layout_weight="0.01" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

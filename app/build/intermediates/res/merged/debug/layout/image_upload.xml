@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    >
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/call_image"
+        android:layout_weight="0.04" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="364dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#eee"
+        android:layout_weight="0.59" />
+
+    <Button
+        android:id="@+id/buttonresult"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/save"
+        />
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/meeting_name_text"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:text="제 목 :"
+            android:layout_width="50dp" />
+        <TextView
+            android:id="@+id/meeting_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="23dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/bar"
+        android:id="@+id/imageView"
+        android:layout_below="@id/title"
+        android:layout_height="23dp" />
+    <TextView
+        android:id="@+id/meeting_content"
+        android:layout_width="350dp"
+        android:layout_height="224dp"
+        android:scrollbars="vertical"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.02" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/meeting_place_text"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="장 소 :"
+            android:ems="12"
+            android:layout_width="100dp" />
+        <TextView
+            android:id="@+id/meeting_place"
+            android:layout_alignParentRight="true"
+            android:textSize="23dp"
+            android:layout_height="match_parent"
+            android:layout_width="300dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/meeting_publish_text"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="개 최 자 :"
+            android:ems="12"
+            android:layout_width="100dp" />
+        <TextView
+        android:id="@+id/meeting_publisher"
+            android:layout_alignParentRight="true"
+            android:textSize="23dp"
+            android:layout_height="match_parent"
+            android:layout_width="300dp" />
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+
+            android:id="@+id/meeting_delete"
+            android:background="@drawable/delete"
+            android:layout_x="300dp"
+            android:layout_y="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:id="@+id/meeting_navi"
+            android:background="@drawable/navi"
+            android:layout_y="-5dp"
+            android:layout_x="85dp" />
+    </AbsoluteLayout>
+
+</LinearLayout>

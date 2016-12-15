@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:hint="모임 제목"
+            android:ems="20"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_centerVertical="true"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="장 소 : "
+                android:background="#00ff0000"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/select_place"
+                />
+
+            <EditText
+                android:id="@+id/placeName"
+                android:layout_width="233dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:ems="12"
+                android:background="@android:color/transparent"
+                android:hint="장소 버튼을 누르세요" />
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/bar"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:layout_below="@id/title"
+            android:layout_height="25dp" />
+        <EditText
+            android:id="@+id/meetingInfo"
+            android:layout_width="350dp"
+            android:layout_height="166dp"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:inputType="textMultiLine"
+            android:ems="12"
+            android:background="@android:color/transparent"
+            android:hint="어떤 모임을 개최하실껀가요?"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="개 최 자 :"
+                />
+            <EditText
+                android:id="@+id/publisher"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:ems="12"
+                android:background="@android:color/transparent"
+                android:hint="개최자를 입력하세요" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="비 밀 번 호 :"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:inputType="textPassword"
+                android:ems="12"
+                android:background="@android:color/transparent"
+                android:hint="비밀번호를 입력하세요" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="insert"
+            android:layout_gravity="right"
+            android:background="@drawable/save"
+            />
+    </LinearLayout>
+</ScrollView>

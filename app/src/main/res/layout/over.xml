@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ToggleButton
+        android:id="@+id/btnOnOff"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:checked = "true"
+        android:text="Toggle"
+        android:textOff="Off"
+        android:textOn="On"
+        />
+
+    <Button
+        android:id="@+id/btnMemo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/arview_memo"
+
+        android:layout_toEndOf="@+id/btnSearch"
+        android:layout_x="5dp"
+        android:layout_y="268dp" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/arview_search"
+        android:layout_x="-1dp"
+        android:layout_y="136dp" />
+
+</AbsoluteLayout>
